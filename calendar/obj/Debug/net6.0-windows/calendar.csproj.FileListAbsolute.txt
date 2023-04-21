@@ -31,3 +31,5 @@ D:\Yarik\mpt\c#\practics_2\calendar\calendar\obj\Debug\net6.0-windows\Alco.g.cs
 D:\Yarik\mpt\c#\practics_2\calendar\calendar\obj\Debug\net6.0-windows\AlcoPage.g.cs
 D:\Yarik\mpt\c#\practics_2\calendar\calendar\obj\Debug\net6.0-windows\Alco.baml
 D:\Yarik\mpt\c#\practics_2\calendar\calendar\obj\Debug\net6.0-windows\AlcoPage.baml
+D:\Yarik\mpt\c#\practics_2\calendar\calendar\obj\Debug\net6.0-windows\DayPanel.g.cs
+D:\Yarik\mpt\c#\practics_2\calendar\calendar\obj\Debug\net6.0-windows\DayPanel.baml

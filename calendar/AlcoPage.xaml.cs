@@ -37,7 +37,7 @@ namespace calendar
             wine.ImageAlco.Source = new BitmapImage(new Uri("/image/whiskey.png", UriKind.Relative));
             beer.NameAlco.Text = "Виски";
 
-            List<Alco> alcos = new List<Alco>();
+            List<Alco> alcos = new List<Alco>() { beer, wine, cocktail, whiskey };
             AlcoList.ItemsSource = alcos;
         }
     }

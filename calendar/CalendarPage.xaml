@@ -34,9 +34,9 @@
         <DatePicker x:Name="Calendar" Width="300" Grid.Column="1" Foreground="#FF207B7B" BorderBrush="#FF207B7B" FirstDayOfWeek="Monday" SelectedDateFormat="Long" FontFamily="FZShuTi" Height="50" FontSize="16"
             materialDesign:HintAssist.Hint="Выбрать дату"
             Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
-        <WrapPanel x:Name="Day" Grid.Row="1" Grid.RowSpan="3">
+        <WrapPanel x:Name="Day" Grid.Row="1" Grid.ColumnSpan="3" >
             
         </WrapPanel>
-        <Frame x:Name="FrameCheck" Grid.Row="1" Grid.RowSpan="3"/>
+        <Frame x:Name="FrameCheck" Grid.Row="1" Grid.ColumnSpan="3"/>
     </Grid>
 </Page>

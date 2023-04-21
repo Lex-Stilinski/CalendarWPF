@@ -16,6 +16,9 @@
     <Compile Update="CalendarPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DayPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Alco.xaml">
@@ -25,6 +28,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CalendarPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DayPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

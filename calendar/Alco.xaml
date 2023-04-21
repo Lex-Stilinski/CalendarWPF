@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:calendar"
              mc:Ignorable="d" 
-             d:DesignHeight="115" d:DesignWidth="600">
+             d:DesignHeight="80" d:DesignWidth="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -14,6 +14,6 @@
         </Grid.ColumnDefinitions>
         <RadioButton Margin="5" HorizontalAlignment="Center"/>
         <Image x:Name="ImageAlco" Grid.Column="1" Margin="5"/>
-        <TextBlock x:Name="NameAlco" Grid.Column="2" Text="Название алкоголя" VerticalAlignment="Center" FontFamily="FZShuTi" FontSize="24" />
+        <TextBlock x:Name="NameAlco" Grid.Column="2" Text="Название алкоголя" VerticalAlignment="Center" FontFamily="FZShuTi" FontSize="20" />
     </Grid>
 </UserControl>

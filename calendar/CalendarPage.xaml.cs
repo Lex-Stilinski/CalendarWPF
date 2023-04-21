@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -20,10 +23,12 @@ namespace calendar
     /// </summary>
     public partial class CalendarPage : Page
     {
+        public DateTime DateTimeNow { get; set; } = DateTime.Now;
         public CalendarPage()
         {
             InitializeComponent();
             Calendar.SelectedDate = DateTime.Now;
+            Panel();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,6 +39,24 @@ namespace calendar
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Calendar.SelectedDate = ((DateTime)Calendar.SelectedDate).AddMonths(-1);
+        }
+
+        public void Panel()
+        {
+            Day.Children.Clear();
+
+            for (int i = 1; i < DateTime.DaysInMonth(DateTimeNow.Year, DateTimeNow.Month) + 1; i++)
+            {
+                DayPanel day = new DayPanel();
+                day.DataName.Content = i.ToString();
+                day.DataName.Click += DayName_Click;
+                Day.Children.Add(day);
+            }
+        }
+
+        private void DayName_Click(object sender, RoutedEventArgs e)
+        {
+            FrameCheck.Content = new AlcoPage();
         }
     }
 }

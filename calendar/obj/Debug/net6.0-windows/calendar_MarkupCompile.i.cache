@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Yarik\mpt\c#\practics_2\calendar\calendar\App.xaml
-4-1859782693
+5-53795328
 
-9523189553
+10-1834445318
 198-1444572633
-Alco.xaml;AlcoPage.xaml;CalendarPage.xaml;MainWindow.xaml;
+Alco.xaml;AlcoPage.xaml;CalendarPage.xaml;DayPanel.xaml;MainWindow.xaml;
 
-False
+True
 
