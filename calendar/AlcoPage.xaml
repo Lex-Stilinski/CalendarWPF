@@ -18,12 +18,13 @@
         </Grid.RowDefinitions>
         <Button
             Grid.Row="0"  
-            Style="{StaticResource MaterialDesignIconForegroundButton}" Foreground="#FF207B7B" HorizontalAlignment="Left">
+            Style="{StaticResource MaterialDesignIconForegroundButton}" Foreground="#FF207B7B" HorizontalAlignment="Left" Click="Button_Click">
             <materialDesign:PackIcon
                 Kind="ArrowBack" />
         </Button>
         <TextBlock Text="Что  вы  сегодня  пили?" FontFamily="FZShuTi" FontSize="16" VerticalAlignment="Center" Margin="5" Grid.Row="1"/>
         <ListBox x:Name="AlcoList" Grid.Row="2" Margin="5"/>
         <Button Background="#FF207B7B" Grid.Row="3" Margin="5" Content="Сохранить  и  выйти" BorderBrush="#FF207B7B" FontFamily="FZShuTi" FontSize="16" />
+        <Frame x:Name="frame" Grid.RowSpan="4"/>
     </Grid>
 </Page>

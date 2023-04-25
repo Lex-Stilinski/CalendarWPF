@@ -7,6 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="50">
     <Grid>
-        <Button x:Name="DataName" Background="{x:Null}" BorderBrush="#FF207B7B" Height="50" Width="50" Content="1" FontFamily="FZShuTi" FontSize="20" Foreground="#FF207B7B" />
+        <Button x:Name="DataName" Background="{x:Null}" BorderBrush="#FF207B7B" Height="50" Width="50" Content="1" FontFamily="FZShuTi" FontSize="18" Foreground="#FF207B7B" />
     </Grid>
 </UserControl>

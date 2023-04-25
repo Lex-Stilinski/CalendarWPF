@@ -23,7 +23,6 @@ namespace calendar
     /// </summary>
     public partial class CalendarPage : Page
     {
-        public DateTime DateTimeNow { get; set; } = DateTime.Now;
         public CalendarPage()
         {
             InitializeComponent();
@@ -34,18 +33,20 @@ namespace calendar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Calendar.SelectedDate = ((DateTime)Calendar.SelectedDate).AddMonths(+1);
+            Panel();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Calendar.SelectedDate = ((DateTime)Calendar.SelectedDate).AddMonths(-1);
+            Panel();
         }
 
         public void Panel()
         {
             Day.Children.Clear();
-
-            for (int i = 1; i < DateTime.DaysInMonth(DateTimeNow.Year, DateTimeNow.Month) + 1; i++)
+            
+            for (int i = 1; i <= DateTime.DaysInMonth(((DateTime)Calendar.SelectedDate).Year, ((DateTime)Calendar.SelectedDate).Month); i++)
             {
                 DayPanel day = new DayPanel();
                 day.DataName.Content = i.ToString();
